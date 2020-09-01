@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+    <head>
+        <meta charset="utf-8">
+    </head>
+
+
+    <body>
+        (1).表单控件补充
+    	<form>
+    		
+            网址<input type="url"><br>
+            邮箱<input type="email"><br>
+            <input type="submit"><br>
+
+            网址框里必须填网址，必须加http
+            邮箱地址一样
+            否则提交报错,无法提交到后台<br>
+
+
+
+            日期<input type="date"><br>
+            时间<input type="time"><br>
+            只能输入数字<input type="number" step="5"><br>
+            <!-- 再输入数字基础上 以5为步长加减 -->
+
+
+
+            滑块<input type="range"  max="100"
+            step="5">
+            <!-- 通过后台程序控制到底滑了多少 -->
+
+            (2).标签语义化
+
+              1.网页结构更合理
+              2.利于SEO（和搜索引擎建立良好沟通
+                 ，网页内容更容易被搜索引擎抓取）
+              3.方便其它设备解析
+              4.方便团队开发维护
+
+
+            (3)好的网页语义化：
+              让网页裸奔！（去掉css样式），结构依然清楚
+
+              1.尽可能少用无语义标签，比如div，s
+                pan，d,u,s,i
+              2.语义不明显的时候，用有语义的
+                比如，div和p，选择p<br>
+
+                <div>这句话是div</div>
+                <div>这句话是div</div>
+                <div>这句话是div</div>
+                <div>这句话是div</div>
+                <div>这句话是div</div>
+               
+                <p>p默认有上下间距，对兼容特殊终端有利</p>
+                <p>p默认有上下间距，对兼容特殊终端有利</p>
+                <p>p默认有上下间距，对兼容特殊终端有利</p>
+                <p>p默认有上下间距，对兼容特殊终端有利</p>
+                <p>p默认有上下间距，对兼容特殊终端有利</p>
+                
+
+
+
+
+    	</form>
+    	
+
+ 
+
+    </body>
+
+
+
+
+</html>

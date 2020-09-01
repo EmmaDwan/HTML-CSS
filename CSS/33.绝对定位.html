@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		.d1{
+			width: 100px;
+			height: 100px;
+			background-color: lightcoral;
+
+
+			/* position: static; */
+			/* 静态定位 */
+			
+			position: absolute;
+			left: 210px;
+			top: 145px;
+		}
+		.d2{
+			width: 50px;
+			height: 50px;
+			background-color: lightpink;
+			
+			position: absolute;
+			left: 20px;
+			top: 200px;
+		}
+
+
+
+
+		.d3{
+			width: 50px;
+			height: 50px;
+			background-color: #80F0C6;
+			
+			position: absolute;      /* d4会补位 */
+		/* 	left: 100px;
+			top: 200px; */
+		}
+		.d4{
+			width: 20px;
+			height: 70px;
+			background-color: #9FD5F3;     
+			
+			position: absolute;
+			left: 20px;
+			top: 200px;
+		}
+
+
+		span{
+			background-color: #F3F09F;
+
+			width: 100px;
+			height: 100px;
+			/* 要让行内元素的宽高起作用 */
+ 
+			/* display: block; */
+			/* 方法1 */
+			/* float: left; */
+			/* 方法2 */
+		    position: absolute;
+		    /* 方法3 */
+		
+		}
+
+	</style>
+</head>
+
+
+
+<body>
+	
+
+	  定位方位名: left  right
+	             top   bottom
+	   
+	  定位分类: 
+	             静态定位(static)
+	             绝对定位(absolute)
+	             相对定位(relative)
+	             固定定位(fixed)
+
+
+    1.静态定位
+       position: static;
+
+       静态定位就是标准流的显示方式，
+       所以很少用到
+       设置了它以后再设left: 300px就不起作用
+
+    2.绝对定位
+       position: absolute;
+
+       元素设绝对定位后，
+       通过方位词 任意设元素位置
+
+       特点：
+           (1)单元素 
+              以body(浏览器)为参考进行定位
+
+           (2)嵌套元素 
+              当父盒子没有设置定位时，子盒子的定位 以浏览器为参照
+
+              当父盒子设置了定位时，子盒子的定位 以父盒子为参照
+
+           (3)类似浮动(脱标)
+
+              给块元素设置绝对定位，它不占原先位置
+              另一个块元素(非嵌套)会补位
+
+           (4)行内元素————行内块(脱标)
+
+
+
+
+
+
+	  <div class="d1"> 	
+	  	d1
+	  	<div class="d2">
+	  		d1里的d2
+	  	</div>
+	  </div>
+
+
+
+	  <div class="d3">
+	  	d3
+	  </div>
+	  <div class="d4">  	
+	  	d4	
+	  </div>
+
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+
+	  <span>
+	  	span1在这里
+	  </span>
+	   <span>
+	  	span2在这里
+	  </span>
+
+
+</body>
+</html>

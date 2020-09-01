@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		.nav{
+			height: 55px;
+			background: url('head_bg.jpg');
+			border: 1px solid lightblue;
+			line-height: 55px;
+			/* 让li里的a文字居中 */
+			/* 继承到li里面 */
+
+		}
+		.nav li{
+			list-style: none;
+			float: left;
+			background: url('li_bg.png') no-repeat right;
+			/* 设置分隔线 */
+			/* 让这条线右对齐，就可以分隔块了 */
+
+			/* padding-right: 10px; */
+			/* padding-left: 10px; */
+			 /* 给li设padding是挤里面的a  */
+			/* 给a设背景色，就和分隔线不对齐了 */
+
+
+			/* 给a设padding是挤a里面的字 */
+		}
+		.nav ul{
+			margin-left: 390px;
+			/* 给ul设margin是整个列表往中间走 */
+			/* 给li设margin是让ul里的li往中间走 */
+		}
+
+	    a{
+	        /* 此时a没有高度 */
+	        height: 55px;
+	        display: inline-block;
+	        padding: 0 10px;
+	        text-decoration: none;
+	        color: black;
+
+	    }
+	    a:hover{
+	    	background-color: lightblue;
+	    }
+
+	    .new{
+	    	background: url('new.png');
+	    	width: 26px;
+	    	height: 20px;
+
+	    	display: block;
+	    	position: absolute;
+	    	left: 422px;
+	    	top: 5px;
+	    }
+		
+	</style>
+</head>
+
+
+
+<body>
+	<div class="nav">
+
+		<ul>
+			<li>
+				<a href="">ipad pro</a>
+			</li>
+			<li>
+				<a href="">ipad air</a>
+			</li>
+			<li>
+				<a href="">iphone</a>
+			</li>
+		</ul>
+		<span class="new"></span>
+		<!-- 在div里 -->
+
+	</div>
+	
+</body>
+</html>

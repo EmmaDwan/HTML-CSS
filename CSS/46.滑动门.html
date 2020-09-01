@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		.left,.middle,.right{
+			float: left;
+		}
+		.left{
+			width: 10px;
+			height: 100px;
+			background-image: url('l.png');
+		}
+		.middle{
+			/* width: 10px; */
+			/* 宽度不要给 */
+			height: 100px;
+			background-image: url('m.png');
+
+			line-height: 100px;
+			/* 文字居中 */
+		}
+		.right{
+			width: 10px;
+			height: 100px;
+			background-image: url('r.png');
+		}
+
+
+
+        li{
+        	list-style: none;
+        	float: left;
+        }
+		li a{
+			/* width: 7px; */
+			/* 不能给a设宽度，
+			不然span被固定了宽度 */
+			height: 35px;
+			background-image: url('bg_r1_c1.png');
+			display: inline-block;
+
+
+			padding-left: 7px;
+			/* 浮动才能显示左圆角 */
+		}
+		li span{
+			/* 不能设width */
+			height: 35px;
+			background-image: url('bg_r1_c2.png');
+			display: inline-block;
+
+
+
+			background-position: right;
+			padding-right: 26px; 
+			/* 伸出来那个角的长度 */
+		}
+
+
+
+
+
+
+	</style>
+</head>
+<body>
+	滑动门： 背景图片 随着内容大小 而调整<br>
+
+
+	<div class="left"></div>
+	<div class="middle">文字写middle里，middle没有设宽度，会随内容变化宽度</div>
+	<div class="right"></div>
+
+   <br>
+   <br>
+   <br>
+   <br>
+   <br>
+	<div class="box">
+		<ul>
+			<li>
+				<a href="#">
+				    <span>你好</span>
+			    </a>
+		    </li>
+			<li>
+				<a href="#">
+				    <span>更长的你好</span>
+			    </a>
+			</li>
+			<li>
+				<a href="#">
+				    <span>更更更长的你好</span>
+			    </a>
+			</li>
+		</ul>
+	</div>
+
+
+</body>
+</html>

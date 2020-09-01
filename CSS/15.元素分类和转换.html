@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+
+        <style type="text/css">
+        	p{
+        		width: 100px;
+        		background-color: pink;
+        	}
+        	.a1{
+        		width: 300px;
+        		height: 300px;
+        		background-color: pink;
+        	}
+        	
+        	.a2{
+        		width: 300px;
+        		height: 300px;
+        		background-color: pink;
+                
+        		display: inline-block;
+
+
+        	}
+        	
+
+
+        </style>
+    </head>
+
+
+
+
+
+    <body>
+
+
+     一.根据html标签显示的方式 
+        分为三类：
+    	(1)块级元素： 
+    	   1.有宽度、高度
+    	   2.自己独占一行（和宽度无关）
+    	    （不设宽度则为浏览器默认宽度）
+    	   3.块级元素可以嵌套
+    	     子元素不设宽度，其宽度为父元素宽度
+
+           div  p  li  h1-h7
+
+    	(2)行内元素：
+    	    1.元素在同一行显示
+    	    2.不能直接设置宽度和高度
+    	     （其默认宽高 为 内容的宽高
+    	       内容已经占满标签大小，不存在居中的操作）
+
+    	    span  a  font  strong
+
+    	(3)行内块元素：
+    	    1.元素在同一行显示
+    	    2.可以设置宽度和高度
+
+    	    image  input（表单控件）  
+
+
+     二.这三种元素可以进行相互转化
+
+      display: inline-block;转化为行内块
+      display: block;
+      display: inline;
+
+
+
+
+
+
+
+    	<p>段落p标签</p>
+    	<div>div标签</div>
+    	<span>span标签</span> <a href="#">百度</a>
+    	<strong>加粗</strong>
+    	<img src="字体设置.jpg">
+    	<input type="text" name="">
+    	<input type="button" value="提交"name="">
+
+
+    	<a class="a1" href="#">google</a>
+    	<a class="a2" href="#">google</a>
+
+
+
+
+
+
+
+
+
+
+
+
+    </body>
+</html>

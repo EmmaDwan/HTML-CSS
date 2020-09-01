@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		input{
+			border: 0 none;
+			/* border: 1px none green; */
+			outline-style: none;
+			/* 轮廓线去掉 */
+		}
+		.username{
+			border: 1px dashed yellowgreen;
+			background-color: lightyellow;
+		}
+		.username:active{
+			background-color: lightcoral;
+		}
+		.email{
+			border-bottom: 1px solid orange;
+		}
+		.search{
+			border: 1px solid purple;
+			background: url('border样式.jpg') no-repeat;
+			/* background-image: url('border样式.jpg'); 
+			background-repeat: no-repeat;
+			background-position: : right; */
+		}
+		
+	</style>
+</head>
+
+
+
+<body>
+
+	<label for="username">
+		用户名: 
+	</label>
+	<input type="text" class="username" id="username"><br>
+
+    <label for="lable2">
+    	邮箱: 
+    </label>
+    <input type="text" class="email" id="lable2"><br>
+
+    <label for="lable3"> 
+    	搜索: 
+	</label>
+    <input type="text" class="search" id="lable3"><br>
+
+	<p>
+		label for="id" 
+		单击label对应文本 可以选择到 id对应标签  
+
+        是label！！！！！！
+        不是lable！！！！！
+
+		id和class是不同的两样，并不冲突
+		id每个标签都可以有，不能重复
+	</p>
+
+
+
+</body>
+</html>

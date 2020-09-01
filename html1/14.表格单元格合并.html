@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+    </head>
+
+
+    <body>
+
+    	1.表格结构：
+    	    thead 
+    	    tbody
+    	    tfoot
+
+    	    一般来说thead和tfoot空间比较小
+    	    可以用于网页优化SEO：
+    	         一般搜索引擎会主要捕获tbody（主题内容）
+    	         但有些浏览器不兼容这种结构
+    	         所以大部分网站不用这个
+
+    	<table width="500" height="400" border="1" cellspacing="0">
+    		<thead>
+    			<tr>
+    				<td></td>
+    				<td></td>
+    				<td></td>
+    			</tr>	
+    		</thead>
+
+
+
+    		<tbody>
+    			<tr>
+    				<td></td>
+    				<td></td>
+    				<td></td>
+    			</tr><tr>
+    				<td></td>
+    				<td></td>
+    				<td></td>
+    			</tr>
+    			<tr>
+    				<td></td>
+    				<td></td>
+    				<td></td>
+    			</tr>
+    		</tbody>
+    	     
+
+
+
+    		<tfoot>
+    			<tr>
+    				<td></td>
+    				<td></td>
+    				<td></td>
+    			</tr>	
+    			<tr>
+    				<td></td>
+    				<td></td>
+    				<td></td>
+    			</tr>		
+    		</tfoot>
+
+
+
+    	</table>
+
+
+    	2.单元格合并
+
+     横向合并：
+
+     （1）合并第n行的所有列：
+    	  在第n行内的列td内写，且可以删去后3行（不删的话就是7列前合4后合3...）
+
+
+     （2）合并第n行的x列：
+          要手动留几列（保留几个td）
+          td不够的话，表格自动补全，为细线，不同于border
+
+      (3)每行都合并可能出现不均分情况...
+
+
+      纵向合并：
+
+      在要合并的第一行里的第n列td写
+      同时删去其他行的第n列td
+      其实不管怎么删，保证你想要的表格行列数 和 td tr对应上就行。
+
+
+
+
+
+
+    	<table width="500" height="400" cellspacing="0" border="1">
+
+
+    		<tr>
+    			<td colspan="4"> </td>
+<!--         	<td></td>
+    			<td></td>
+    			<td></td> -->
+    		</tr>
+
+
+
+    		<tr>
+    			<td colspan="2"></td>
+    			<td></td>
+    			<td rowspan="3"></td>
+           <!-- <td></td> -->
+            </tr>
+
+
+
+    		<tr>
+    			<td></td>
+    	     	<td></td>
+    			<td></td>
+    	  <!--  <td></td> -->
+    		</tr>
+
+
+    		<tr>
+    			<td></td>
+    			<td></td>
+    			<td></td>
+    	   <!-- <td></td> -->
+    		</tr>
+    	</table>
+
+<br>
+   
+        <table width="500" height="400" cellspacing="0" border="1">
+
+
+            <tr>
+                <td colspan="4"> </td>
+
+            </tr>
+
+
+
+            <tr>
+                <td colspan="2"></td>
+                <td></td>
+                <td rowspan="3"></td>
+            </tr>
+
+
+
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+
+            </tr>
+
+
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+
+            </tr>
+        </table>
+      
+
+    </body>
+</html>

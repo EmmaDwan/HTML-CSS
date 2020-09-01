@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+
+        <style type="text/css">
+        	.one{
+        		color: red;
+        		font-size: 30px;
+        	}
+        	.two{
+        		color: yellow;
+        		font-size: 40px;
+        	}
+        	div{
+        		color: purple;
+        		font-size: 30px;
+        		font-family: 宋体;
+        	}
+        	
+
+        </style>
+
+
+
+    </head>
+
+
+
+    <body>
+
+    	
+      一、CSS特性
+           (1)层叠性：
+              样式冲突时，发生覆盖
+
+              1.和样式调用顺序(标签里)无关
+              2.和样式定义(style里)顺序有关,以后者定义为主
+
+
+           (2)继承性：
+              标签嵌时，未设置的子元素继承父元素样式
+
+              1.和文字有关属性(包括行高) 可以继承
+
+              2.a标签不能继承颜色
+                被浏览器默认渲染样式层叠掉了a:-webkit-any-link {}
+               重新单独设置a即可
+
+              3.h系列标签不能继承文字大小
+              （会变化还是因为浏览器渲染了样式，继承了但浏览器又做了计算）
+
+           (3)优先级：
+                 !important>内联(行内样式)1000>id选择器100>伪类|类|属性选择器10>标签选择器1>伪对象>通配符>继承|默认样式0
+                                1000        100       10           1        0
+
+
+                     
+
+
+
+
+
+    		
+
+    	
+    	<p class="one two">
+    		p文字
+    	</p>
+
+    	<div>
+    		1div文字
+    		<p>2div里p文字</p>
+    		<a href="#">3百度</a>
+    		<h6>4标题h6</h6>
+    	</div>
+
+    
+
+
+    </body>
+</html>

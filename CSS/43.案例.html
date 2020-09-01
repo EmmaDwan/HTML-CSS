@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		.box{
+			width: 300px;
+			height: 300px;
+			border: 1px solid purple;
+
+			overflow: hidden;
+			/* 溢出部分藏起来，然后通过锚链接切换 */
+			/* 关键 */
+		}
+
+		#div1,#div2,#div3{
+			width: 300px;
+			height: 300px;
+		}
+		#div1{
+			background-color: pink;
+		}
+		#div2{
+			background-color: lightblue;
+		}
+		#div3{
+			background-color: lightcoral;
+		}
+	</style>
+
+</head>
+
+
+
+
+
+
+
+
+<body>
+	<a href="#div1">div1</a>
+	<a href="#div2">div2</a>
+	<a href="#div3">div3</a>
+	<!-- 锚链接 -->
+
+	<div class="box">
+		<div id="div1"></div>
+		<div id="div2"></div>
+		<div id="div3"></div>
+		<!-- 锚链接要用到id -->
+	</div>
+	
+</body>
+</html>

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <style type="text/css">
+
+        	p.one{
+        		color: red;
+        	}
+        	p.two{
+        		color:orange;
+        	}
+
+
+
+
+
+        	div#d1{
+        		color: skyblue;
+        	}
+        	div.d1{
+        		color:yellowgreen;
+        	}
+
+
+
+
+
+        	div p{
+        		color: purple;
+        	}
+        	div.d1 p{
+        		color: yellow;
+        	}
+
+
+        </style>
+
+
+
+    </head>
+
+
+
+    <body>
+
+
+    <p>
+    标签指定式选择器
+
+        1.用法
+
+    		标签名.类选择器名
+    		标签名#id选择器名
+            { 属性: 值；
+              属性: 值；
+              属性: 值；
+            } 
+
+        2.特质
+
+            既又关系，要同时满足两个条件
+
+
+
+    后代选择器
+
+        1.用法
+            选择器 选择器{ 属性: 值；
+                          属性: 值；
+                          属性: 值；
+                        } 
+
+
+
+
+        2.特质
+           标签之间必须属于嵌套关系
+           
+           每个选择器之间必须有空格
+
+           没详细设置的子集会继承设置过的父集样式
+
+    </p>
+
+
+
+
+
+
+
+
+         p.one tab
+    	<p class="one">第一段p文字</p>
+    	<p class="two">第二段p文字</p>
+    	<p class="one">第三段p文字</p>
+    	<p class="two">第四段p文字</p>
+    	<p class="one">第五段p文字</p>
+
+
+
+    	<div id="d1">
+
+            第六段div id文字
+    
+    	</div>
+
+
+
+
+    	<div class="d1">
+
+    		第七段div class文字
+    		<p>
+    			第八段div class里的p文字
+    		</p>
+
+    	</div>
+
+
+
+
+    	<div id="d1">
+    		<p>
+    			第九段div里的p文字
+    		</p>
+    	</div>
+
+
+
+
+    </body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		div.div1{
+			width: 300px;
+			height: 300px;
+
+			border-width: 5px;
+			border-style: dashed;
+			border-color: rebeccapurple;
+		}
+		div.div2{
+			width: 300px;
+			height: 300px;
+
+			border-top: 3px solid green;
+			border-left: 10px dotted pink;
+			border-right: 1px solid blue;
+			border-bottom: solid pink;
+		}
+	</style>
+</head>
+
+
+
+
+
+
+
+<body>
+
+    盒模型：
+
+    (1)作用：网页布局
+    (2)盒子组成 
+
+         边框     border
+         内边距   padding
+         外边距   margin
+
+    (3)border属性
+       border-width  边框宽度，默认无none
+        (光设置宽度不行，必须有样式)
+       border-style  边框样式，默认无none
+                     solid
+                     dotted
+                     dashed 
+       border-color  边框颜色
+
+       <img src="border宽度.jpg">
+       <img src="border样式.jpg">
+
+    (4)写法更复杂的border属性
+
+     border-top: 3px solid green;
+	   border-left: 不分顺序、数量
+		 border-right: 
+		 border-bottom:
+
+		 border-top-color:
+		 border-top-style:
+		 border-top-width:
+    (5)border属性联写
+         border: 1px solid red;
+         不分顺序、数量
+         style样式必须写（至少有样式才体现宽度）
+
+
+
+
+       <div class="div1">
+       	   这是一个div盒子
+       </div>
+
+        <div class="div2">
+       	   这是第二个div盒子
+       </div>
+
+         
+
+
+
+	
+</body>
+</html>

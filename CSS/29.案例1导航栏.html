@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		.nav{
+			
+			height: 50px;
+			background-color: pink;
+			line-height: 50px;
+			/* 行高继承给li */
+
+		}
+		li{
+			list-style: none;
+			float: left;
+		}
+		li a{
+			height: 50px;
+			display: inline-block;
+			/* 转为行内块，高度才起作用 */
+			padding: 0 10px;
+			/* 变成行内块后可以设padding */
+			/* 让a里的文字居中 */
+		}
+		li a:hover{
+			background-color: lightcoral;
+		}
+		
+	</style>
+</head>
+
+
+<body>
+	<div class="nav">
+		<ul>
+			<li><a href="#">百度</a></li>
+			<li><a href="#">必应</a></li>
+			<li><a href="#">google</a></li>
+		</ul>
+
+
+
+		<br>
+		做导航栏一般不推荐直接给a设置宽度,因为文字不一样，宽度很少一致
+	</div>
+</body>
+</html>

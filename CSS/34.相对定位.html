@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		.one{
+			width: 100px;
+			height: 100px;
+			background-color: pink;
+
+		    position: relative;
+			/* 相对定位 */
+
+			left: 10px;
+			top: 20px;
+
+
+		}
+		.two{
+			width: 100px;
+			height: 100px;
+			background-color: lightblue;
+
+
+		/* 	position: relative;
+			left: 10px;
+			top: 20px; */
+		}
+
+
+
+		span{
+			width: 100px;
+			height: 100px;
+			background-color: yellowgreen;
+
+			position: relative;
+
+			left: 10px;
+			top: 20px;
+			/* 宽高依然不起作用 */
+		}
+	</style>
+</head>
+
+
+<body>
+
+
+      3.相对定位
+          position: absolute;
+
+      	  相对 元素自己原来的位置 移动
+      	  (和另一个div无关)
+
+
+      	特点：
+        (1)盒子设相对定位，
+           依然占着原先的位置，后面的元素不会补位
+           (不会浮起)
+        (2)不能将 行内元素————块(盒子)
+
+                (相对定位没有脱标)
+
+        (3)父盒子设置相对定位，
+           子盒子 参照 父盒子定位。
+
+           (父盒子不需定位时，原则：子绝对父相对
+            父盒子需要定位时,  设绝对定位)
+
+
+
+	<div class="one"></div>
+	<div class="two"></div>
+
+	<span>span行内元素</span>
+	<br>
+	<br>
+	<br>
+	<br>
+
+	<div class="two">
+		<div class="one"></div>
+	</div>
+	
+</body>
+</html>

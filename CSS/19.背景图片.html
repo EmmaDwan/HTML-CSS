@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+
+	<style type="text/css">
+		
+		div{
+			background-image:url("../html1/海崖.jpg") ;
+			width: 500px;
+			height: 500px;
+			/* background-repeat: no-repeat;
+			background-color: pink; */
+
+		}
+		.d2{
+			background-image:url("../html1/海崖.jpg") ;
+			width: 500px;
+			height: 500px;
+			background-repeat: no-repeat;
+			background-color: pink;
+			/* background-position: center bottom; */
+			background-position: 50px 160px;
+			/* background-attachment: fixed; */
+		}
+	</style>
+</head>
+
+
+
+<body>
+	<p>
+      backgound的几种属性：
+
+	  1.background-color:   背景色
+
+	  2.background-image:   背景图片
+	     设置背景图片时，一定要设置标签的宽度高度
+	     当宽高大过图片时，横纵方向都默认平铺（连续重复）
+
+	  3.background-repeat:  背景图片重复
+	                    默认 repeat;
+	                  不平铺 no-repeat;
+	                横向平铺 repeat-x;
+	                纵向平铺 repeat-y;
+
+      4.background-position: 背景图片位置
+                  
+                  默认center（横纵居中）
+          (1)方位 top;
+                  bottom;
+                  left;
+          		  right;
+           		  center;  
+
+           		  这五个可以两两组合
+                  不分顺序
+
+          (2)具体数字
+                 第一个数 距离左端(水平)
+                 第二个数 距离顶端(竖直)
+       5.background-attachment: 
+
+                默认滚动 scroll;
+                    固定 fixed;
+
+
+
+
+	</p>
+
+    <div>
+    	这是一段div
+    	div默认有宽度，却没有高度
+    </div>
+
+
+    <div class="d2">
+    	第二段div
+    </div>
+
+
+
+
+	
+</body>
+
+
+</html>

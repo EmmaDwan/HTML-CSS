@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="Expires" CONTENT="0">
+        <meta http-equiv="Cache-Control" CONTENT="no-cache">
+        <meta http-equiv="Pragma" CONTENT="no-cache">
+
+        <style type="text/css">
+
+          /* a:link{
+            color: pink;
+          } */
+          a{
+            color: pink;
+          }a:visited{
+            color: lightblue; 
+            /* text-decoration: none; */    /* 安全问题，此项失效 */
+          }
+          
+          a:hover{
+            color: yellowgreen;
+            text-decoration: none;
+          }
+          a:active{
+            color: red;
+          }
+          /* 鼠标按住时 */
+
+         /*  a:focus{
+            color: purple;
+          } */
+
+
+
+         
+          
+
+        </style>
+
+
+
+    </head>
+
+
+
+  <body>
+  
+   一.伪类
+
+      1.超链接
+      (和a标签设置样式效果相同
+      一般用a，不用a:link)
+        a:link{
+               属性: 值;
+               属性: 值;
+               ...
+               }
+        
+
+
+      2.超链接访问过后
+        a:visited{
+                  属性: 值;
+                  属性: 值;
+                  ...
+                  }
+      访问后，再刷新，颜色并不变回去
+      解决方式：代码换没访问过的网址
+               ctrl + shift + delete清缓存
+                  
+
+      3.鼠标放到超链接上         (常用)
+        a:hover{
+                属性: 值;
+                属性: 值;
+                ...
+                }
+
+
+      4.超链接激活状态下
+        a:active{
+                 属性: 值;
+                 属性: 值;
+                 ...
+                 }
+
+      5.获取焦点（光标）时
+        :focus{
+               属性: 值;
+               属性: 值;
+               ...
+               }
+
+
+
+
+  二.伪类属性
+
+      text-decoration: none; 去掉链接横线
+                       underline; 显示下横线
+                       line-through;贯穿线
+
+
+
+
+
+
+       <div>
+           <a href="http://www.taobao.com">淘宝</a>
+       </div>
+
+               
+
+
+               
+
+
+
+  </body>
+</html>

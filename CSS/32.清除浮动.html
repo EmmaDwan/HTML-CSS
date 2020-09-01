@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		.content{
+			width: 500px;
+			/* height: 300px; */
+			background-color: pink;
+			/* overflow: hidden; */
+			/* 清除浮动2 */
+		}
+		.left{
+			width: 200px;
+			height: 300px;
+			background-color: #FFC0CB;
+			float: left;
+		}
+		.right{
+			width: 300px;
+			height: 300px;
+			background-color: #EA4F6A;
+			float: left;
+		}
+		.footer{
+			width: 500px;
+			height: 50px;
+			background-color: #CCEF6E;
+		}
+
+		/* 清除浮动1 */
+		/* .clearfix{
+			clear: both;
+		} */
+		
+
+		/* 清除浮动3 */
+                  
+		.clearfix:after{      /* 伪元素 */
+			content: "";      /* 内容为空 */
+			display: block;   /* 以块级元素显示 */	
+			
+			clear: both;
+			height: 0;
+			line-height: 0;
+			visibility: hidden;
+		}
+		.clearfix{
+			zoom: 1;
+			/* 为了兼容IE浏览器 */
+		}
+		
+
+
+
+
+
+	   .d1{
+	   	width: 300px;
+	   	height: 300px;
+	   	border: 1px solid purple;
+
+	   	/* overflow: hidden; */
+	   	/* 隐藏溢出部分 */
+
+	   	overflow: auto;
+	   	/* 自动添加或去掉滚动条 */
+
+	   	/* overflow: scroll; */
+	   	/* 添加滚动条 */
+	   }
+	   .d2{
+	   	width: 300px;
+	   	height: 300px;
+	   	border: 1px solid lightblue;
+	   }
+
+
+	   
+
+
+	</style>
+</head>
+
+
+<body>
+	一.清除浮动:
+	   (1).不是 删除浮动
+	       是清除浮动的影响
+
+	   当子元素浮动，而父元素没有设置高度，导致页面布局混乱时，需要清除浮动。
+
+	   (2).方法：
+	     1.clear: both;        在左侧不许浮动元素
+	              left;
+	              right;
+	             在要清除浮动的块后面添加块标签，一般起名clearfix
+
+	       弊端：凭空多加了一个盒子
+
+	     2.overflow: hidden;
+	               给父盒子设置
+	               父盒子里不能有定位元素
+
+	       弊端：父盒子里如果有定位的元素，且超出父元素，该定位元素超出的部分会被隐藏。
+
+	     3.用伪元素清除浮动
+
+    二.overflow应用
+
+        overflow: hidden;  将溢出部分隐藏
+
+                  auto;    (优先用这个)
+                           如果有溢出，给盒子设置滚动条
+                           如果没有溢出，则不显示滚动条
+
+                  scroll;  添加滚动条
+                           无溢出的话，有条但不能滚动
+
+	           
+
+                   <!-- 清除浮动3 -->
+	<div class="content clearfix">
+		<div class="left">内容左</div>
+		<div class="right">内容右</div>
+		<!-- <div class="clearfix"></div> -->
+		<!-- 清除浮动1 -->
+	</div>
+
+
+	<div class="footer">
+		尾部
+	</div>
+
+		盒子content必须存在，否则左右内容浮动后，尾部就向上补位，结构就乱了
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+
+
+
+	<div class="d1">
+		<p>好多文字好多行</p>
+		<p>好多文字好多行</p>
+		<p>好多文字好多行</p>
+		<p>好多文字好多行</p>
+		<p>好多文字好多行</p>
+		<p>好多文字好多行</p>
+		<p>好多文字好多行</p>
+		<p>好多文字好多行</p>
+		<p>好多文字好多行</p>
+		
+	</div>
+	<div class="d2">
+		下面的盒子
+	</div>
+
+
+</body>
+</html>

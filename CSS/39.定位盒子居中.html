@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		.one{
+			height: 300px;
+			width: 500px;
+			border: 1px solid lightblue;
+			margin: 0 auto;
+			/* 大盒子居中 */
+
+			position: relative;
+			/* 设相对位置后，子盒子的移动参照父盒子 */
+		}
+		.two{
+			height: 100px;
+			width: 100px;
+			border: 1px solid yellowgreen;
+			/* margin: 0 auto; */
+			/* 小盒子居中 */
+			position: absolute;
+
+
+
+			/* left: 250px; */
+			/* 移动父盒子的一半 */
+			/* margin-left: -50px; */
+			/* 移回自己的一半 */
+
+		
+			left: 50%;/* 移动父盒子的一半 */
+			margin-left: -50%;/* 移回自己的一半 */
+			
+		}
+
+	</style>
+</head>
+
+
+
+<body>
+
+	1.标准流的情况，盒子居中就用margin: 0 auto;
+
+	               比如正常情况，
+	               比如定位中position: relative;
+
+	2.定位(脱标)的情况
+	    让子盒子走父盒子的一半，再走自己的一半
+
+	left: 50%;         从左往右走
+
+	margin-left: -50%  依然让右，只不过走负值
+	                   (right:和margin-right:都不对)
+
+
+
+	相当于浏览器拥有一个
+	    正方向为向右 和 向下 
+	的坐标系  
+
+
+
+
+
+	
+	<div class="one">
+		<div class="two"></div>
+	</div>
+	
+</body>
+</html>

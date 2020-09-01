@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		/* *{
+			margin: 0;
+			padding: 0;
+		} */
+		/* 较不规范 */
+
+		div,body,h1,h2,h3,h4,h5,h6{
+			margin: 0;
+			padding: 0;
+		}
+		/* 比较规范 */
+
+		.box{
+			width: 208px;
+			height: 383px;
+            /* 不量边框 */
+			border: 1px solid #CECECE;
+			/* 量边框 */
+			margin: 20px auto;
+		}
+		.title{
+			height: 25px;
+			background-color: #ECEDEE;
+			line-height: 25px;
+			/* h4设margin或者title设padding */
+		}
+		h4{
+			margin-left: 9px;
+			/* 盒子右移 */
+			/* padding-left: 9px; */
+			/* 盒子不动，里面标题右移 */
+		}
+		.photo{
+			width: 180px;
+			height: 180px;
+			border: 1px solid #ECEDEE;
+			margin: 5px auto;
+			/* 盒子居中 */
+		}
+		.vip{
+			text-align: center;
+			/* 盒子里的内容居中 */
+			border-bottom: 1px dashed #D1D1D1;
+			/* 虚线分割线 */
+			padding-bottom: 10px;
+			/* 和下虚线有距离 */
+		}
+		.vip input{
+			height: 20px;
+			width: 70px;
+			background: url('vb.jpg') no-repeat;
+		
+		}
+		.friend{
+			text-align: center;
+			border-bottom: 1px dashed #D1D1D1;
+			/* 虚线分割线 */
+			padding-bottom: 10px;
+			/* 和下虚线有距离 */
+		}
+		.friend input{
+			width: 69px;
+			height: 23px;
+			margin-top: 10px;
+			
+		}
+
+
+
+	</style>
+</head>
+
+
+
+<body>
+	<div class="box">
+		<div class="title">
+			<h4>个人资料</h4>
+		</div>
+
+
+		<div class="photo">
+			<img src="1.jpg">
+		</div>
+
+
+		<div class="vip">
+			<span>新浪微博</span>
+			<img src="v.jpg"><br>
+			<input type="button" value="微博">
+		</div>
+
+
+		<div class="friend">
+			<input type="button" value="加好友" name="">
+			<input type="button" value="加好友" name="">
+			<input type="button" value="加好友" name="">
+			<input type="button" value="加好友" name="">
+
+			
+
+			
+		</div>
+
+	</div>
+
+
+	
+</body>
+</html>

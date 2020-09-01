@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		.one{
+			width: 50px;
+			height: 50px;
+			background-color: pink;
+			/* display: inline-block; */
+		}
+		.two{
+			width: 60px;
+			height: 60px;
+			background-color: purple;
+			/* display: inline-block; */
+		}
+
+
+	    .d1{
+			width: 70px;
+			height: 70px;
+			background-color: lightblue;
+			float: left;
+		}
+		.d2{
+			width: 80px;
+			height: 80px;
+			background-color: skyblue;
+			float: left;
+			
+		}
+		.span1{
+			width: 50px;
+			height: 50px;
+			background-color: lightgoldenrodyellow;
+			/* display: inline-block; */
+			float: left;
+			/* 高度起作用了(变成快) */
+		}
+		.span2{
+			width: 50px;
+			height: 50px;
+			background-color: yellowgreen;
+			/* display: inline-block; */
+			/* float: left; */
+			
+		}
+
+
+		.pic{
+			width: 300px;
+			height: 300px;
+			border: 1px solid yellowgreen;
+		}
+		.pic img{
+			float: left;
+		}
+
+
+
+	</style>
+</head>
+
+
+<body>
+
+	一.标准流(文档流)
+
+	   标准流的显示方式：块级元素独占一行
+	                    行内元素在同行
+
+
+	 标准流相当于一种规则，
+	 可以打破这种规则。
+	      比如块级元素和行内元素的转化
+	      display: inline-block;
+
+	      比如浮动
+
+
+	二.浮动
+
+	(1).用法
+	   float: left;
+	          right;
+	          只是设置浮动方向，
+	          类似页面里左对齐或者右对齐
+
+
+		前面元素浮动，原位置向上飘起
+		后面元素向前补位，浮动元素遮住了补位元素
+
+		后面元素继续浮动，上面位置被占，自动上方旁边补位
+
+
+    (2).特点：
+	    1.设置了浮动的元素不占原来得位置(脱离标准流)
+ 
+	    2.可以让块级元素在同一行显示
+	  浮动找浮动(顶部对齐)，不浮动找不浮动
+
+	    3.可以让行内元素 转化 行内块元素
+	  
+  
+        浮动是脱标的，
+        能用display就不用浮动。
+        如果用了浮动，就不重复用dislay。
+
+    (3).作用
+
+       1.解决图片环绕问题(给图片设浮动，不会盖住文字，文字会在旁边显示)
+
+       2.制作导航栏
+
+       3.网页布局
+
+
+
+
+<br>
+
+
+
+
+
+
+
+
+	<div class="one">
+		one
+	</div>
+	<div class="two">
+		two
+	</div>
+
+
+
+	<div class="d1">
+		d1
+	</div>
+	<div class="d2">
+		d2
+	</div>
+
+	<span class="span1">span1</span>
+	<span class="span2">span2</span>
+
+    <br> <br> <br> <br> <br> <br>
+
+	<div class="pic">
+		<img src="1.jpg">
+		<p>图片环绕图片环绕图片环绕图片环绕图片环绕图片环绕图片环绕图片环绕图片环绕图片环绕图片环绕图片环绕图片环绕图片环绕图片环绕图片环绕图片环绕图片环绕图片环绕图片环绕图片环绕图片环绕图片环绕图片环绕图片环绕图片环绕图片环绕图片环绕图片环绕图片环绕图片环绕图片环绕图片环绕图片环绕</p>
+	</div>
+
+	
+</body>
+</html>

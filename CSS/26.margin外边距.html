@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		.one,.two{
+			width: 200px;
+			height: 200px;
+			background-color: yellowgreen;
+		}
+		.one{
+			margin-bottom: 100px;
+
+		}
+ 
+		.two{
+			background-color: gold;
+			/* 层叠该颜色 */
+			margin-top: 50px;
+
+		}
+
+
+		.div1{
+			width: 200px;
+			height: 200px;
+			background-color: pink;
+
+
+			/* border: 1px solid; */
+			/* 解法1 */
+			overflow: hidden;
+			/* 解法2 */
+		}
+		.div2{
+			width: 50px;
+			height: 50px;
+			background-color: lightcoral;
+			margin-top: 30px;
+
+		}
+	</style>
+</head>
+
+
+<body>
+
+
+	<p>
+	 快捷:   div.类名——tab<br>
+     (1)margin属性：
+
+		margin-left:
+		margin-right:
+		margin-top:
+		margin-bottom:
+
+     (2)外边距合并特点：
+         1.两盒子垂直显示，其间距离 以最大margin为主
+         (水平方向没有这种效果)
+
+         2.外边距塌陷：
+           子盒设margin-top，想下移
+           结果父下移了
+
+           解决：
+                父盒子设border边框(    但同时要改变大小，不推荐)
+
+                给父盒子设置overflow: hidden;触发bfc(自己给自己划个范围)
+
+                (bfc为格式化上下文)
+	 (2)属性联写：
+
+	    margin: 10px;
+	           上右下左(顺时针)
+	    margin: 10px 20px;
+	             上下  左右
+	    margin: 10px 20px 40px;
+	              上  左右   下
+	    margin: 10px 20px 40px 60px;
+	              上   右   下    左
+
+	</p>
+
+
+
+
+	<div class="one">
+		div内容1
+	</div>
+	<div class="two">
+		div内容2
+	</div><br><br><br><br>
+
+
+
+
+	<div class="div1">
+		<div class="div2">
+			嵌套div
+		</div>
+	</div>
+	
+</body>
+</html>

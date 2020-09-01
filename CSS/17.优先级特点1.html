@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <style type="text/css">
+        	#one{
+        		color: red;
+        	}
+        	.two{
+        		color: greenyellow;
+        	}
+        	
+
+
+        </style>
+
+
+    </head>
+
+
+
+    <body>
+
+    	优先级特点：
+
+    	1.继承的权重为0：
+
+    	  如例1，如果p不设样式，会继承父元素div的样式红色。但p自己设了样式，自己设的>父元素设的。
+    	  即，“继承得来的样式权重为0”
+    	  （所以浏览器默认样式也能覆盖继承样式）
+
+
+
+
+    	<div id="one"> 
+    		<p class="two">例1</p>
+    	</div>
+
+
+    </body>
+</html>

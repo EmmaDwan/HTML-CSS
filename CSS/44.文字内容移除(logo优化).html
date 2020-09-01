@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		a{
+			width: 200px;
+			height: 200px;
+			display: inline-block;
+
+			background-color: pink;
+
+			text-indent: -3em;
+			/* text-indent: -5000px; */
+
+			/* 负方向缩进字符 */
+			/* 把a链接的文字弄出去了 */
+			/* 正方向缩进的话消失不了还会出现滚动条 */
+
+		}
+		div{
+			width: 200px;
+			height: 0;
+			/* 关键 */
+			background-color: purple;
+			
+
+			padding-top: 100px;
+			/* 内边距撑开盒子 */
+			overflow: hidden;
+		}
+	</style>
+</head>
+<body>
+	<a href="#">搜狐</a>
+	<!-- 这个地方文字必须写，不然搜不到？ -->
+
+
+    <br>
+
+
+	<div>
+		div文字
+	</div>
+
+	
+</body>
+</html>

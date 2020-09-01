@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+
+        <meta name="keywords" content="前端开发">
+        <meta name="description" content="这是一个关于meta的网页">
+        <meta http-equiv="refresh" content="5;url=http://www.baidu.com">
+        
+        <meta name="Author" content="可爱萌">
+        <meta name="Robots" content="all|none|index|noindex|follow|nofollow">
+
+    </head>
+
+    <body>
+    	meta标签
+    	1.charset:字符集
+    	  utf-8 表示一种编码格式
+    	  e.g. ASCII   字母
+    	       ANSI    日韩
+    	       Unicode
+    	       Gbk     中文
+    	       Gb2312
+    	       Big5    繁体
+    	       最后出了同一编码：utf-8
+    	
+
+    	2.keywords 告诉搜索引擎你网页的关键词
+    	           后面可以放一些精简的标签（可以优化网页），对网站的描述
+    	  网页优化SEO：<!-- 搜索引擎优化 （搜索优化） -->
+                      1技术手段    
+    	              2百度买排名
+
+
+        3.description 告诉搜索引擎你网页的主要内容
+                      后面可以放一些网页描述
+
+
+        4.http-equiv 网页重定向
+                     打开以后跳转到另一个网页
+                     可以用于换域名、打广告
+                    <!--  <meta http-equiv="refresh" content="5；url=http://www.baidu.com"> -->
+                    5代表5s以后
+
+       
+        5.Author 告诉搜索引擎你的网站的制作作者
+        6.Robots 蜘蛛爬虫
+
+
+                          文件            页面链接
+
+              all       将被检索          可被查询
+              none      不可              不可
+              index     将被检索
+              follow                     可被查询
+              noindex   不可               可被查询
+              nofollow  将被检索           不可
+
+
+
+
+        link标签
+
+        1.引入外部样式表
+
+        <link rel="stylesheet"  type="text/css" href="1.css">
+
+        rel： 必需。定义当前文档与被链接文档之间的关系。
+
+        外部样式表，将一个CSS样式单独放到一个CSS文件里，用stylesheet可以吧这个文件引用过来
+
+
+
+        2.添加小图标<!-- 页面title -->
+
+        <link rel="icon"  href="favicon.ico">
+
+        浏览器页面 网页title加上小图标
+        文件后缀名只能是ico（jpg不行）
+        图标文件一般放在根目录
+
+    </body>
+</html>

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+    </head>
+
+
+    <body>
+    	表格table最初用于网页布局
+    	后来网页布局还是用div和css
+    	表格作用就还是显示数据
+
+        Emmet语法：tr*4>td*5
+                  按tab快速生成
+        
+        组成：
+           table   定义表格
+           tr      行
+           td      列（单元格）
+
+           th      标题，用法同td 
+                   （区别是th会自动居中，加粗）
+                   
+
+        属性：
+           border  设置表格边框，默认0没有，设1为有
+                   正常情况下不加border也不设背景颜色的话，看不出有表格。。。。。。
+           width   表格宽
+           height  表格高 
+           cellspacing 设置各个单元格之间距离
+           cellpadding 文字 和 单元格各边线的距离
+           bgcolor     设置背景颜色
+           align="center" 放在td或tr里，文字居中
+                          放在表格里，整个表格居中（相对于网页）
+                 "left" 
+                 "right"
+
+        表格标题：
+          caption  放在table里面
+                  （放外面就和表格无关了）
+                   
+                   可以再嵌套标题标签h
+                   （不能直接在table里嵌套h，没有效果）
+           
+
+
+        <table  border="1" width="400" height="300" cellspacing="0" cellpadding="20" bgcolor="pink" align="center">
+
+        	<caption>  <h3>信息表</h3>  </caption>
+
+        	<tr>
+        		<td align="center">姓名</td>
+        		<td align="center">年龄</td>
+        		<td align="center">学院</td>
+        		<td align="center">班级</td>
+        	</tr>
+
+        	<th>姓名</th>
+        	<th>年龄</th>
+        	<th>学院</th>
+        	<th>班级</th>
+
+        	<tr align="center">
+        		<td>A</td>
+        		<td>21</td>
+        		<td>通信工程</td>
+        		<td>41</td>
+        	</tr>
+
+        	<tr>
+        		<td>B</td>
+        		<td>21</td>
+        		<td>通信工程</td>
+        		<td>19</td>
+        	</tr>
+
+        	<tr>
+        		<td>C</td>
+        		<td>22</td>
+        		<td>电子信息</td>
+        		<td>21</td>
+        	</tr>
+
+        	<tr>
+        		<td>D</td>
+        		<td>22</td>
+        		<td>计算机</td>
+        		<td>11</td>
+        	</tr>
+
+        </table>
+
+          
+
+
+        细线表格案例：
+        <table width="600"  height="400"  bgcolor="grass" cellspacing="1">
+        	<tr bgcolor="white">
+        		<td></td>
+        		<td></td>
+        		<td></td>
+        		<td></td>
+        	</tr>
+        	<tr bgcolor="white">
+        		<td></td>
+        		<td></td>
+        		<td></td>
+        		<td></td>
+        	</tr>
+        	<tr>
+        		<td bgcolor="white"></td>
+        		<td bgcolor="white"></td>
+        		<td></td>
+        		<td></td>
+        	</tr>
+        	<tr>
+        		<td></td>
+        		<td></td>
+        		<td></td>
+        		<td></td>
+        	</tr>
+        </table>
+
+
+
+
+
+
+
+    </body>
+</html>

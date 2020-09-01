@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+	
+		/* *{
+			margin: 0;
+			padding: 0;
+		} */
+		h1,h2,h3,h4,h5,h6,body{
+			margin: 0;
+			padding: 0;
+			text-align: center;
+		}
+			/* css初始化 */
+
+		.box{
+			width: 980px;
+			height: 700px;
+			background-color: #D7E9C7;
+			margin: 0 auto;
+		}
+		.header{
+			/* 宽度可继承，不设 */
+			height: 70px;
+			background-color: #EFF1A6;
+			
+		}
+		.container{
+			/* 宽度可继承，不设 */
+			height: 700px;
+			background-color: #9FD8ED;
+			
+		}
+
+		.content{
+			width: 680px;
+			height: 600px;
+			background-color: #E49CAF;
+			float: left;
+		}
+		.sidebar{
+			width: 300px;
+			height: 600px;
+			background-color: #F6CFD1;
+			float: left;
+		}
+		.footer{
+			height: 70px;
+			background-color: #EFF1A6;
+		}
+	</style>
+</head>
+
+
+汀
+
+
+
+
+<body>
+
+
+	1.网页布局：
+		盒子套盒子，让盒子之间浮动
+		可以用margin让盒子之间有距离
+
+		做备注分块更明确
+    2.css初始化
+        h系列标签也是有外边距的
+        <img src="css初始化.jpg">
+        这个例子里，大部分标签都进行了初始化
+
+    <!-- 主体盒子 -->
+	<div class="box">
+		<!-- 头部 -->
+		<div class="header">
+			头部
+		</div>
+
+
+
+       <!-- 内容 -->
+		<div class="container">
+			<!-- 内容左 -->
+			<div class="content">左</div>
+			<!-- 内容右 -->
+			<div class="sidebar">右</div>
+		</div>
+
+
+
+
+        <!-- 尾部 -->
+		<div class="footer">
+			尾部
+		</div>
+	</div>
+
+</body>
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		div p{
+			color: pink;
+		}
+		div h1{
+			color: pink;
+		}
+		div span{
+			color: pink;
+		}
+		p div{
+			color: pink;
+		}
+		p h1{
+			color: pink;
+		}
+		p span{
+			color: pink;
+		}
+
+		.one{
+			width: 500px;
+			height: 500px;
+			border: 1px solid blue;
+		}
+		.two{
+			width: 200px;
+			height: 200px;
+			border: 1px solid purple;
+			/* margin-left: auto; */
+			margin-right: auto;
+		}
+	</style>
+</head>
+
+
+
+
+
+<body>
+
+一、标签包含规范：
+
+   行内元素只能包含行内元素(最好不要包含任何元素)
+	    
+   块级元素不能包含有些块级元素
+
+
+   1.div可以包含任何标准流下的元素
+   2.p不能包含div h1 列表ul li标签
+   3.h1标题系列可以包含其他标签
+	      其它规范参考规范图
+
+	    <img src="标签包含规范1.jpg
+	    "><br>
+	    <img src="标签包含规范2.jpg"><br>
+	    <img src="标签包含规范3.jpg"><br>
+	    <img src="标签包含规范4.jpg"><br>
+
+二、规避脱标流
+
+   网页布局中肯定会用到定位和浮动(绝对定位和浮动会脱标)
+
+   原则是能用标准高流就不脱标
+   标准流————浮动————定位
+
+      比如只是让子盒子在父盒子中左右跑一跑，
+        不用 float: right;
+          用 margin-left: auto;
+
+          再margin-left: auto;又居中了
+          (margin: 0 auto;后者就是左auto右auto)
+
+
+
+
+
+	<div>
+		<p>p文字</p>
+		<h1>标题h1</h1>
+		<span>span文字</span>
+	</div>
+
+	<p>
+		<div>p里面的div</div>
+		<h1>p下面的h1</h1>
+		<span>p下面的span</span>
+	</p>
+
+	<div class="one">
+		<div class="two"></div>
+	</div>
+
+</body>
+</html>  
+
+
+
+
+
+
+    
